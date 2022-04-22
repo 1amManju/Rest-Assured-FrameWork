@@ -23,7 +23,6 @@ public class CreateProjectAndVerifyIndatabase extends BaseAPIclass
 							.contentType(ContentType.JSON)
 						.when()
 							.post(EndPointsLibrary.CreateProject);
-//		resp.then().log().all();
 		
 		//Capture the Project Id
 		String expData = rLib.getJsoPath(resp, "projectId");
